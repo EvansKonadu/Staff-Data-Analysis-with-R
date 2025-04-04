@@ -17,7 +17,6 @@ df <- read.csv("assessment-1-k2436512-1.csv")
 
 ##########################################################
 
-# Question 1
 # 1. Distribution of Staff by Department (categorical variable)
 
 # Create the bar plot for department distribution
@@ -53,7 +52,6 @@ ggplot(df, aes(x = time)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         plot.title = element_text(hjust = 0.5))
 ggsave("distribution_of_staff_by_employment.jpeg", width = 10, height = 6, dpi = 300, device = "jpeg")
-
 
 
 
@@ -109,7 +107,7 @@ ggsave("distribution_of_staff_by_sick_leave_days.jpeg", width = 10, height = 6, 
 
 
 
-## Question A table (or tables) of appropriate descriptive statistics for each of the four variables. 
+## A table (or tables) of appropriate descriptive statistics for each of the four variables. 
 
 # Calculate frequencies and mode
 dept_stats <- df %>%
@@ -167,7 +165,7 @@ print(quant_table)
 
 
 
-# Question 3. A table of appropriate statistics for response_target, comparing the groups in department and in time.
+# 3. A table of appropriate statistics for response_target, comparing the groups in department and in time.
 
 # Calculate statistics for response_target by department
 dept_stats <- df %>%
@@ -209,7 +207,7 @@ dept_statist <- df %>%
 
 
 
-# Question 4. An appropriate graph format, showing response_target statistics for each group in time. 
+# 4. An appropriate graph format, showing response_target statistics for each group in time. 
 
 # Create the box plot
 ggplot(df, aes(x = factor(time, levels = c("Less than 1 year", "1 year", "2 years", "3-5 years", "6-10 years", "More than 10 years")), 
@@ -229,8 +227,7 @@ ggsave("response_target_boxplot.jpeg", width = 10, height = 6, dpi = 300, device
 
 
 
-# Question 5
-##  Relationship Between Sick Days and Response Target
+##  5. Relationship Between Sick Days and Response Target
 
 ggplot(df, aes(x = sick_days, y = response_target)) +  # Ensure column names are lowercase if needed
   geom_point(color = "blue", alpha = 0.6, size = 3) +  # Single color for points, added size for clarity
@@ -258,7 +255,7 @@ ggsave("sick_days_response_target_scatter.jpeg", width = 10, height = 6, dpi = 3
 
 
 ###################################################
-##### Other options for question 5 #############
+##### Other options for 5 #############
 
 library(ggplot2)
 
