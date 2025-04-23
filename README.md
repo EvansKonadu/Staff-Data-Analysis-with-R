@@ -33,7 +33,7 @@ This project explores a dataset of staff members, examining various aspects such
 
 *Most staff took less than 20 sick leave days, with a long tail indicating higher values for some.*
 
-------------------------------------
+-------------------------------------
 
 ### d. Distribution of Staff Based on Query Response Times
 ![image](https://github.com/user-attachments/assets/8818f8c6-f032-4b76-b977-9218772a5737)
